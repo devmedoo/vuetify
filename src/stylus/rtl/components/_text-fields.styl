@@ -1,0 +1,73 @@
+.input-group--text-field label
+  left: auto
+  right: 0
+
+.input-group--text-field.input-group--textarea
+  &:not(.input-group--full-width)
+    label
+      left: 0px
+      right: 15px
+
+    .input-group__input
+      padding: 30px 13px 0 0
+
+.input-group--text-field
+  .input-group__counter
+    margin-left: 0
+    margin-right: auto
+
+.input-group--text-field
+  &.input-group--prepend-icon
+    .input-group__messages
+      margin-right: 0
+      margin-left: auto
+      padding-left: 0px
+      padding-right: 40px
+
+    .input-group__details
+      &:before, &:after
+        margin-left: 0px
+        margin-right: 40px
+
+    label
+      left: 0px
+      right: 40px
+
+  &.input-group--full-width
+    label
+      margin-left: 0
+      margin-right: $grid-gutters.lg
+
+.input-group--prefix
+  &:not(.input-group--focused):not(.input-group--dirty)
+    label
+      left: 0px
+      right: 16px
+
+.input-group--prefix,
+.input-group--suffix
+  .input-group--text-field__prefix
+    margin-right: 0px
+    margin-left: 3px
+
+  .input-group--text-field__suffix
+    margin-left: 0px
+    margin-right: 3px
+
+.input-group--text-field-box
+  label
+    left: 0px
+    right: 16px
+
+  .input-group__input
+    border-radius: 0 4px 4px 0
+
+  &.input-group--prepend-icon
+    .input-group__details
+      &:before, &:after
+        margin-left: 0px
+        margin-right: 56px
+
+    label
+      left: 0px
+      right: 56px

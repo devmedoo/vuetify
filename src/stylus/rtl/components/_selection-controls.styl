@@ -1,0 +1,47 @@
+.input-group--selection-controls.input-group--tab-focused,
+.input-group--tab-focused .input-group:focus
+  .input-group--selection-controls__ripple
+    &:before
+      transform: translate3d(50%, -50%, 0) scale(1)
+
+.input-group.input-group--selection-controls
+  .icon--selection-control
+    left: auto
+    right: 0
+
+
+.input-group.input-group--selection-controls label
+  left: 0px
+  right: 32px
+
+.input-group--selection-controls__ripple
+  transform: translate3d(12px, -50%, 0)
+  left: auto
+  right: 0
+
+  &:before
+    left: 0%
+    right: 50%
+    transform: translate3d(50%, -50%, 0) scale(.3)
+
+.input-group--prepend-icon
+  &.input-group--selection-controls
+    .icon--selection-control,
+    .input-group--selection-controls__ripple
+      left: 0px
+      right: 38px
+
+    label
+      left: 0px
+      right: 76px
+
+.input-group--prepend-icon
+  &.radio-group--row
+    .icon--selection-control,
+    .input-group--selection-controls__ripple
+      left: 0px
+      right: 14px
+
+    label
+      left: 0px
+      right: 52px

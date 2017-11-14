@@ -1,0 +1,17 @@
+$i = 0
+for level, spacer in $spacers
+  .mr-{$i}
+    margin-right: 0 !important
+    margin-left: spacer.x !important
+  .ml-{$i}
+    margin-left: 0 !important
+    margin-right: spacer.x !important
+
+  .pr-{$i}
+    padding-right:0 !important
+    padding-left: spacer.x !important
+  .pl-{$i}
+    padding-left: 0 !important
+    padding-right: spacer.x !important
+
+  $i = $i + 1

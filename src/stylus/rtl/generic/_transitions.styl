@@ -1,0 +1,39 @@
+.carousel-transition
+  &-enter
+    transform: translate3d(-100%, 0, 0)
+
+  &-leave, &-leave-to
+    transform: translate3d(100%, 0, 0)
+
+.carousel-reverse-transition
+  &-enter
+    transform: translate3d(100%, 0, 0)
+
+  &-leave, &-leave-to
+    transform: translate3d(-100%, 0, 0)
+
+.tab-transition
+  &-enter
+    transform: translate(-100%, 0)
+
+  &-leave-to
+    transform: translate(100%, 0)
+
+.tab-reverse-transition
+  &-enter
+    transform: translate(100%, 0)
+
+  &-leave, &-leave-to
+    transform: translate(-100%, 0)
+
+.slide-x-transition
+  &-enter, &-leave-to
+    transform: translateX(15px)
+
+.slide-x-reverse-transition
+  &-enter, &-leave-to
+    transform: translateX(-15px)
+
+.fab-transition
+  &-enter, &-leave-to
+    transform: scale(0) rotate(45deg)

@@ -1,0 +1,43 @@
+stepper($material)
+  &--vertical
+    .stepper__content:not(:last-child)
+      border-left: 0
+      border-right: 1px solid rgba($material.fg-color, $material.divider-percent)
+
+theme(stepper, "stepper")
+
+.stepper
+  &__step__step
+    margin-right: 0px
+    margin-left: 8px
+
+.stepper
+  &__label
+    text-align: right
+
+.stepper
+  &__content
+    .btn
+      margin-left: auto
+      margin-right: 0
+
+.stepper
+  &--vertical
+    .stepper__content
+      margin: -8px 36px -16px -36px
+      padding: 16px 23px 16px 60px
+
+    .stepper__step__step
+      margin-right: 0px
+      margin-left: 12px
+
+  &--alt-labels
+    .stepper__step__step
+      margin-right: auto
+      margin-left: 0
+
+@media $display-breakpoints.sm-and-down
+  .stepper:not(.stepper--vertical)
+    .stepper__step__step
+      margin-right: auto
+      margin-left: 0

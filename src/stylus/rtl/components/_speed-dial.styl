@@ -1,0 +1,25 @@
+.speed-dial
+  &--left
+    left: 0
+    right: $grid-gutters.lg
+
+  &--right
+    right: 0
+    left: $grid-gutters.lg
+
+  &--direction
+    &-top,
+    &-bottom
+      .speed-dial__list
+        left: auto
+        right: 0
+
+    &-right
+      .speed-dial__list
+        left: 0%
+        right: 100%
+
+    &-left
+      .speed-dial__list
+        right: 0%
+        left: 100%

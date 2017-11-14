@@ -1,0 +1,29 @@
+.progress-circular
+  &--indeterminate
+    svg
+    .progress-circular__overlay
+      animation: $progress-circular-rotate-dash
+      stroke-linecap: round
+      stroke-dasharray: 80,200
+      stroke-dashoffset: 0px
+
+  &__info
+    left: 50%
+    transform: translate3d(50%, -50%, 0)
+
+@keyframes progress-circular-dash
+    0%
+      stroke-dasharray: 1,200
+      stroke-dashoffset: 0px
+
+    50%
+      stroke-dasharray: 100,200
+      stroke-dashoffset: -15px
+
+    100%
+      stroke-dasharray: 100,200
+      stroke-dashoffset: -125px
+
+  @keyframes progress-circular-rotate
+    100%
+      transform: rotate(-360deg)

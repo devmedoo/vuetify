@@ -1,0 +1,56 @@
+.input-group.input-group--slider
+  padding-right: 0px
+  padding-left: 16px
+
+  label
+    + .input-group__input
+      margin-left: 0px
+      margin-right: 16px
+
+  &.input-group--prepend-icon
+    .slider
+      margin-left: 0px
+      margin-right: 40px
+
+  &.input-group--append-icon
+    .slider
+      margin-right: 0px
+      margin-left: 40px
+
+.slider
+  &__track__container
+    &:after
+      right: auto
+      left: 0
+
+  &__track
+    left: auto
+    right: 0
+    transform-origin: left
+
+    &-fill
+      left: auto
+      right: 0
+      transform-origin: right
+
+  &__ticks-container
+    left: auto
+    right: 0
+
+  &__thumb
+    left: 0px
+    right: -10px
+
+.slider
+  &__thumb--label__container
+    left: auto
+    right: 0
+
+  &__thumb--label
+    border-radius: 50% 50% 50% 0
+    left: 0px
+    right: -14px
+    transform: rotate(-45deg)
+
+    span
+      transform: rotate(45deg) translateZ(0)

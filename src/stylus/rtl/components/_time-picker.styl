@@ -1,0 +1,37 @@
+.picker--time
+  &.picker--landscape
+    .picker__title
+      div:first-child
+        text-align: left
+
+.picker--time
+  .picker__title
+    div:last-child
+      margin: 8px 8px 6px 0
+
+.picker--time__clock
+  left: 0%
+  right: 50%
+  transform: translate(50%, -50%)
+
+  &-hand
+    left: 0
+    right: calc(50% - 1px)
+
+    &:before
+      left: 0%
+      right: 50%
+      transform: translate3d(50%, -50%, 0)
+
+  &:after
+    left: 0%
+    right: 50%
+    transform: translate3d(calc(50%, - 1px), -50%, 0)
+
+  > span
+    left: 'calc(50% - %s)' % $time-picker-number-font-size
+
+    &:before, &:after
+      left: 0%
+      right: 50%
+      transform: translate3d(50%, -50%, 0)

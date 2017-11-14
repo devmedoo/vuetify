@@ -1,0 +1,31 @@
+.snack
+  &--top
+    left: 0%
+    right: 50%
+    transform: translate3d(50%, 0, 0) translateZ(0)
+
+  &--bottom
+    left: 0%
+    right: 50%
+    transform: translate3d(50%, 0, 0) translateZ(0)
+
+  &--left
+    left: initial
+    right: 8px
+
+  &--right
+    left: 8px
+    right: initial
+
+  &__content
+    .btn
+      margin: 0 48px 0 0
+
+@media $display-breakpoints.xs-only
+  .snack
+    left: initial
+    right: 0
+
+    &__content
+      .btn
+        margin: 0 24px 0 0

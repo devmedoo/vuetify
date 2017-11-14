@@ -1,0 +1,33 @@
+.navigation-drawer
+  left: auto
+  right: 0
+
+  &__border
+    right: auto
+    left: 0
+
+  &.navigation-drawer--right
+    &:after
+      left: initial
+      right: 0
+
+  &:not(.navigation-drawer--is-booted)
+    + .toolbar, ~ main, ~ .footer
+      @media $display-breakpoints.sm-and-down
+        padding-left: auto !important
+        padding-right: 0 !important
+
+  &--close:not(.navigation--permanent)
+    &.navigation-drawer:not(.navigation-drawer--right)
+      transform: translate3d(100%, 0, 0)
+
+    &.navigation-drawer--right
+      transform: translate3d(-100%, 0, 0)
+
+  &--right
+    left: 0
+    right: auto
+
+    > .navigation-drawer__border
+      right: 0
+      left: auto

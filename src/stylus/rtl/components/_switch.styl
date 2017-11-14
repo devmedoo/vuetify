@@ -1,0 +1,20 @@
+.input-group.input-group--selection-controls
+  &.switch
+    .input-group--selection-controls__toggle
+      left: auto
+      right: 0
+
+    .input-group--selection-controls__ripple
+      transform: translate3d(15px, -24px, 0)
+
+      &:after
+        left: 0%
+        right: 50%
+        transform: translate3d(50%, -50%, 0)
+
+      &--active
+        transform: translate3d(-2px, -24px, 0)
+
+    label
+      padding-left: 0px
+      padding-right: 14px

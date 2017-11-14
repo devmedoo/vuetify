@@ -28,25 +28,35 @@ export default {
       type: String,
       default: 'app'
     },
-    dark: Boolean
+    dark: Boolean,
+	rtl: Boolean
   },
 
   computed: {
     classes () {
       return {
-        [`theme--${this.dark ? 'dark' : 'light'}`]: true
+        [`theme--${this.dark ? 'dark' : 'light'}`]: true,
       }
     }
   },
 
   mounted () {
     this.$vuetify.dark = this.dark
+	this.$vuetify.rtl = this.rtl
   },
 
   watch: {
     dark () {
       this.$vuetify.dark = this.dark
-    }
+    },
+	rtl (){
+	  this.$vuetify.rtl = this.rtl
+	  if(this.rtl == true){
+		  require('../../stylus/rtlapp.styl')
+	  } else {
+		  delete require.cache[require.resolve('../../stylus/rtlapp.styl')]
+	  }
+	}
   },
 
   render (h) {

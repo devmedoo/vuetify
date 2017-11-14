@@ -1,0 +1,19 @@
+.badge
+  &__badge
+    right: 0
+    left: -($badge-width)
+
+  &--overlap
+    .badge__badge
+      right: 0px
+      left: -8px
+
+    &.badge--left
+      .badge__badge
+        left: initial
+        right: -8px
+
+  &--left
+    .badge__badge
+      left: 0
+      right: -($badge-width)

@@ -1,0 +1,39 @@
+.input-group--select
+  &.input-group--focused
+    .input-group__append-icon:not(.input-group__icon-clearable)
+      transform: rotate(-180deg)
+
+.input-group--select
+  .input-group__selections
+    &__comma
+      padding-right: 0px
+      padding-left: 4px
+
+  .fade-transition-leave-active
+    left: auto
+    right: 0
+
+.input-group
+  &.input-group--overflow,
+  &.input-group--editable,
+  &.input-group--segmented
+    .input-group__selections__comma, input
+      left: auto
+      right: 0
+      padding-left: 0px
+      padding-right: 16px
+
+    label
+      left: 16px !important
+
+    .input-group__input
+      &:before
+        left: auto
+        right: 0
+
+  &--segmented .input-group__input,
+  &--editable .input-group__input:hover,
+  &.input-group--focused.input-group--editable .input-group__input
+    &:after
+      right: 0px
+      left: 55px

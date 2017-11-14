@@ -1,0 +1,32 @@
+.list
+  &__tile
+    &:after
+      left: auto
+      right: 0
+
+    &__title
+      text-align: right
+
+    &__content
+      text-align: right
+
+  &--group
+    &:after
+      left: auto
+      right: 0
+
+    .list__tile
+      padding-left: 0
+      padding-right: $list-item-left-padding
+
+    &__header
+      &--active
+        .list__tile
+          .list__tile__action:last-of-type
+            .icon
+              transform: rotate(-180deg)
+
+      &--no-action + .list--group
+        .list__tile
+          padding-left: 0
+          padding-right: $list-left-padding

@@ -1,0 +1,64 @@
+.toolbar
+  will-change: padding-right
+
+.toolbar
+  &__title
+    margin-left: 0px
+    margin-right: 16px
+
+  &__content, &__extension
+    > .btn:last-child, > .menu:first-child
+      margin-right: 0px
+      margin-left: 8px
+
+    > .btn:first-child, > .menu:first-child
+      margin-left: 0px
+      margin-right: 8px
+
+    > *:not(.btn):not(.menu):first-child
+      margin-left: 0
+      margin-right: $grid-gutters.lg
+
+    > *:not(.btn):not(.menu):last-child
+      margin-right: 0
+      margin-left: $grid-gutters.lg
+
+  @media $display-breakpoints.xs-only
+    .toolbar__content,
+    .toolbar__extension
+      > .btn:last-child
+        margin-right: 0px
+        margin-right: 17px
+
+      > .btn:first-child
+        margin-left: 0px
+        margin-right: 17px
+
+      > *:not(.btn):not(.menu):first-child
+        margin-left: 0
+        margin-left: $grid-gutters.xl
+
+      > *:not(.btn):not(.menu):last-child
+        margin-right: 0
+        margin-left: $grid-gutters.xl
+
+.toolbar
+  &--fixed, &--absolute
+    left: auto
+    right: 0
+
+.toolbar__extension
+  .toolbar__title
+    margin-left: 0px !important
+    margin-right: 72px !important
+
+toolbar-content(left)
+  .toolbar__content,
+  .toolbar__extension
+    > *:first-child
+      margin-left: right
+      margin-right: left
+
+    > *:last-child
+      margin-right: right
+      margin-left: left

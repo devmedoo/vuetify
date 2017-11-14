@@ -1,0 +1,62 @@
+.btn
+  &__content:before
+    left: auto
+    right: 0
+
+.btn
+  &--floating
+    .icon
+      &:not(:only-of-type):last-of-type
+        transform: rotate(45deg)
+        left: 0
+        right: calc(50% - 12px)
+
+    &.btn--active
+      .icon
+        &:not(:only-of-type)
+          &:first-of-type
+            transform: rotate(-45deg)
+            left: 0
+            right: 'calc(50% - %s)' % (24 / 2)
+
+    &.btn--small
+      &.btn--floating .icon
+        left: 0
+        right: 'calc(50% - %s)' % ($button-floating-small-icon-width / 2)
+
+    &.btn--large
+      &.btn--floating .icon
+        left: 0
+        right: 'calc(50% - %s)' % ($button-floating-large-icon-width / 2)
+
+  &--left
+    left: 0
+    right: $grid-gutters.lg
+
+  &--right
+    right: 0
+    left: $grid-gutters.lg
+
+.btn
+  &__loading
+    left: auto
+    right: 0
+
+    .icon
+      &--left
+        margin-right: 0
+        margin-left: 1rem
+
+      &--right
+        margin-left: 0
+        margin-right: 1rem
+
+.btn
+  .icon
+    &--right
+      margin-left: 0px
+      margin-right: 16px
+
+    &--left
+      margin-right: 0px
+      margin-left: 16px
