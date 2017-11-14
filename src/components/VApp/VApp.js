@@ -36,6 +36,7 @@ export default {
     classes () {
       return {
         [`theme--${this.dark ? 'dark' : 'light'}`]: true,
+		[`${this.rtl ? 'rtl' : ''}`]: true
       }
     }
   },
