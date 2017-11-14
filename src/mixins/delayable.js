@@ -22,27 +22,11 @@ export default {
       default: 200
     }
   },
-
   methods: {
-    /**
-     * Clear any pending delay
-     * timers from executing
-     * 
-     * @return {void}
-     */
     clearDelay () {
       clearTimeout(this.openTimeout)
       clearTimeout(this.closeTimeout)
     },
-    /**
-     * Runs callback after
-     * a specified delay
-     * 
-     * @param  {String}   type
-     * @param  {Function} cb
-     * 
-     * @return {void}
-     */
     runDelay (type, cb) {
       this.clearDelay()
 

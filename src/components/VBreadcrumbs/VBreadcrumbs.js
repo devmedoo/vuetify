@@ -38,12 +38,6 @@ export default {
   },
 
   methods: {
-    /**
-     * Add dividers between
-     * v-breadcrumbs-item
-     * 
-     * @return {array}
-     */
     genChildren () {
       if (!this.$slots.default) return null
 

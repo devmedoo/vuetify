@@ -1,11 +1,3 @@
-/**
- * Menu position
- * 
- * @mixin
- *
- * Used for calculating an automatic position (used for VSelect)
- * Will position the VMenu content properly over the VSelect
- */
 export default {
   methods: {
     // Revisit this
